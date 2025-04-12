@@ -1,8 +1,8 @@
  // EcoWatch Chat Bot Integration Script
  (function() {
     // Configuration - Use the provided Gemini API endpoint
-    const GEMINI_API_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
-    const GEMINI_API_KEY =  'AIzaSyB-umyWf_9iojekrCFYGZhW5jE-5Gqpw0c';// Replace with your actual key
+    const GEMINI_API_ENDPOINT = "//";
+    const GEMINI_API_KEY =  '//API KEY';// Replace with your actual key
     
     // DOM Elements
     const chatButton = document.getElementById('ecoChatButton');
