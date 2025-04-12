@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Garbage</title>
+    <link rel="icon" href="assert/WhatsApp Image 2025-04-02 at 11.20.30_7ce1afd7.jpg">
+    <link rel="Stylesheet" href="navStyle.css">
+    <link rel="Stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="crousel.css">
+    <link rel="stylesheet" href="bot.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+     <!-- Chat Button -->
+     <button id="ecoChatButton" class="eco-chat-button">
+        <i>🌱</i>
+    </button>
+    
+    <div id="CHATINPUT">ASK ME</div>
+   
+    <!-- Chat Container -->
+    <div id="ecoChatContainer" class="eco-chat-container hidden">
+        <div class="eco-chat-header">
+            <h3>EcoWatch Assistant</h3>
+            <button class="eco-chat-close" id="ecoChatClose">✕</button>
+        </div>
+        <div class="eco-chat-messages" id="ecoChatMessages">
+            <!-- Messages will be added here dynamically -->
+        </div>
+        <div class="eco-quick-actions">
+            <button class="eco-action-btn" data-action="report">🚨 Report Garbage</button>
+            <button class="eco-action-btn" data-action="find">🔍 Find Cleanup Events</button>
+            <button class="eco-action-btn" data-action="info">💡 Environmental Tips</button>
+            <button class="eco-action-btn" data-action="hygiene">🧼 Hygiene Information</button>
+        </div>
+        <div class="eco-chat-input">
+            <button class="eco-upload-btn" id="ecoUploadBtn">📷</button>
+            <button class="eco-location-btn" id="ecoLocationBtn">📍</button>
+            <input type="file" id="ecoImageUpload" style="display: none;" accept="image/*">
+            <input type="text" id="ecoChatInput" placeholder="Type your message...">
+            <button id="ecoChatSend">➤</button>
+        </div>
+    </div>
+
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="logo">
+            <img width="30px" src="svg/logo.svg">
+            <div style="font-size: 20px font-weight: 700; margin-right: 20px;">TRASH TRACKER</div>
+        </div>
+        
+        <ul id="nav-links3">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">About</a></li>
+            <li><a href="login.html">Contact</a></li>
+            <a href="signup.html"> <button id="signup" class="btnsignin">Sign Up <i class="fas fa-sign-in"></i></button></a>
+           <a href="login.html"> <button id="login" class="btnLogin">Log In <i class="fa-solid fa-user"></i></button></a>
+            <!-- <li><a href="#"><img id="profile" width="38px" src="svg/profile.svg"></a></li> -->
+        </ul>
+        <div style="display: flex; gap: 10px;">
+        <a href="signup.html"> <button id="signup2" class="btnsignin">Sign Up <i class="fas fa-sign-in"></i></button></a>
+         <a href="login.html"> <button id="login2" class="btnLogin">Log In <i class="fa-solid fa-user"></i></button></a>
+        </div>
+        </nav>
+
+
+    <!-- Main Content -->
+     <main>
+        <div class="overlay" >
+            <img id="main-img"  src="assert/ChatGPT Image Apr 1, 2025, 11_16_39 AM.png">
+        </div>
+       
+    
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h2>Clean India Mission</h2>
+                    <p>Join the digital revolution in waste management and help create a cleaner, greener India</p>
+                    <a href="login.html" class="cta-button">Join Now</a>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h2>Smart Waste Collection</h2>
+                    <p>Schedule pickups, track progress, and earn rewards for responsible waste disposal</p>
+                    <a href="login.html" class="cta-button">Learn More</a>
+                </div>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="slide-content">
+                        <h2>Clean India Mission</h2>
+                        <p>Join the digital revolution in waste management and help create a cleaner, greener India</p>
+                        <a href="login.html" class="cta-button">Join Now</a>
+                    </div>
+                </div>
+
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h2>Smart Waste Collection</h2>
+                    <p>Schedule pickups, track progress, and earn rewards for responsible waste disposal</p>
+                    <a href="login.html" class="cta-button">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h2>Green Cities Initiative</h2>
+                    <p>Together we can achieve sustainable cities and zero-waste communities</p>
+                    <a href="login.html" class="cta-button">Get Started</a>
+                </div>
+            </div>
+        </div>
+       </div>
+
+       <section class="container">
+        <div class="heading">
+            <h1 style="color: #2E7D32;">What We Do</h1>
+            <p>Join our mission for a cleaner, greener India</p>
+        </div>
+
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://1.bp.blogspot.com/-8uD-lNbNXDY/XgRcPAT4YHI/AAAAAAAA1Yo/qa6MTYLGvTc3ZGj_5TgZdGUjYoMh2VmdACLcBGAsYHQ/s1600/banner-small-garbage-day_402x-1.jpg" alt="Video Reporting">
+                <div class="card-content">
+                    <h3>Video Reporting</h3>
+                    <p>Document garbage issues with geotagged video evidence for immediate municipal attention.</p>
+                    <a href="login.html" class="btn">Report Issue</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/912d1f189970791.Y3JvcCwyNDYzLDE5MjYsNDUxLDM1Mw.jpg" alt="Eco Rewards">
+                <div class="card-content">
+                    <h3>Eco-Rewards</h3>
+                    <p>Earn redeemable points for verified reports and top contributor rankings.</p>
+                    <a href="login.html" class="btn">Earn Rewards</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://le-uploaded-image-bucket.s3.amazonaws.com/20171218/rsCZgHHNgxdCPWaDSmI15135939725205.jpg" alt="Green Solutions">
+                <div class="card-content">
+                    <h3>Green Solutions</h3>
+                    <p>Connect with recycling partners and sustainable waste management initiatives.</p>
+                    <a href="login.html" class="btn">Go Green</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://d3i71xaburhd42.cloudfront.net/b63967de1ef5780c9e2b4814d5554ad0f91e0e79/2-Figure1-1.png" alt="Impact Analytics">
+                <div class="card-content">
+                    <h3>Impact Analytics</h3>
+                    <p>Real-time tracking of cleaned areas and community impact metrics.</p>
+                    <a href="login.html" class="btn">View Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="faq-container">
+        <div class="faq-header">
+            <h1>🌱 Trash Tracker FAQ</h1>
+            <p>Find answers to common questions about our garbage reporting system</p>
+        </div>
+
+        <!-- General Questions -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What is Trash Tracker?</h3>
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                <p>Trash Tracker is a citizen-powered platform for reporting environmental issues, specifically designed for garbage management. Users can report improperly disposed waste through video evidence and geolocation tagging.</p>
+            </div>
+        </div>
+
+        <!-- Reporting Process -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How do I report garbage accumulation?</h3>
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                <p>To report garbage:</p>
+                <ol>
+                    <li>Capture video/photos of the site</li>
+                    <li>Allow location access</li>
+                    <li>Fill details about waste type</li>
+                    <li>Submit for municipal action</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Rewards System -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How does the reward system work?</h3>
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                <p>Users earn EcoPoints for:</p>
+                <ul>
+                    <li>✅ Verified reports</li>
+                    <li>🗑 Regular participation</li>
+                    <li>🌍 Community impact</li>
+                </ul>
+                <p>Points can be redeemed for eco-friendly products or local discounts.</p>
+            </div>
+        </div>
+
+        <!-- Data Privacy -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Is my personal information secure?</h3>
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                <p>We prioritize user privacy:</p>
+                <ul>
+                    <li>📍 Location data is anonymized</li>
+                    <li>📹 Media files are encrypted</li>
+                    <li>🔒 No personal data shared with third parties</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Government Response -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What happens after I submit a report?</h3>
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                <p>Our process:</p>
+                <ol>
+                    <li>Report verification within 24 hours</li>
+                    <li>Priority classification</li>
+                    <li>Forwarded to local authorities</li>
+                    <li>Cleanup status tracking</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="eco-badge">
+            Still have questions? Contact us at <a href="#">support@TrashTracker.in</a>
+        </div>
+    </div>
+    <hr>
+    <script src="login-register.js"></script>
+    <script src="mainScript.js"></script>
+    <script src="frebaseauth.js"></script>
+    <script src="bot.js"></script>
+    <script src="faq.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Garbage</title>
+    <link rel="icon" href="assert/WhatsApp Image 2025-04-02 at 11.20.30_7ce1afd7.jpg">
+    <link rel="Stylesheet" href="navStyle.css">
+    <link rel="Stylesheet" href="mainStyle.css">
+    <link rel="Stylesheet" href="login.css">
+    <link rel="stylesheet" href="crousel.css">
+    <link rel="stylesheet" href="bot.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="getlocationname.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" src="./homepage.js"></script>
+   
+</head>
+<body>
+    <!-- Chat Button -->
+    <button id="ecoChatButton" class="eco-chat-button">
+        <i>🌱</i>
+    </button>
+    <div id="CHATINPUT">ASK ME</div>
+
+    <!-- Chat Container -->
+    <div id="ecoChatContainer" class="eco-chat-container hidden">
+        <div class="eco-chat-header">
+            <h3>EcoWatch Assistant</h3>
+            <button class="eco-chat-close" id="ecoChatClose">✕</button>
+        </div>
+        <div class="eco-chat-messages" id="ecoChatMessages">
+            <!-- Messages will be added here dynamically -->
+        </div>
+        <div class="eco-quick-actions">
+            <button class="eco-action-btn" data-action="report">🚨 Report Garbage</button>
+            <button class="eco-action-btn" data-action="find">🔍 Find Cleanup Events</button>
+            <button class="eco-action-btn" data-action="info">💡 Environmental Tips</button>
+            <button class="eco-action-btn" data-action="hygiene">🧼 Hygiene Information</button>
+        </div>
+        <div class="eco-chat-input">
+            <button class="eco-upload-btn" id="ecoUploadBtn">📷</button>
+            <button class="eco-location-btn" id="ecoLocationBtn">📍</button>
+            <input type="file" id="ecoImageUpload" style="display: none;" accept="image/*">
+            <input type="text" id="ecoChatInput" placeholder="Type your message...">
+            <button id="ecoChatSend">➤</button>
+        </div>
+    </div>
+
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="logo">
+            <input type="checkbox" id="check" style="opacity: 0"/>
+            <div class="btn_two">
+                <label for="check">
+                    <img width="50px" src="svg/icons8-hamburger-menu.svg">
+        </label>
+            </div>
+           
+        
+        <div class="sidebar_menu">
+            <div class="logo" style="display: flex; flex-direction: column; margin: 20px 0 0 0;">
+             <center> <div id="profilephoto"><img  height="100px"  src="svg/profile.svg"> </div> </center>
+
+             <center>  <div style="font-size: 20px; font-weight: 500;"> <span id="loggedUserFName3"></span> <span id="loggedUserLName"></span></div></center>
+             <center>  <div style="font-size: 15px; font-weight: 300;"> <span id="loggedUserEmail"></span></div></center>
+            </div>
+    
+            <div class="btn_two">
+                <label for="check" >
+                   
+                </label>
+              </div>
+    
+            
+        <div class="menu" id="sidemenuitems" style="font-size: 20px;">
+            
+            <ul id="nav-links2">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Vision</a></li>
+            </ul>
+           
+            
+             
+          </div>
+    </div>
+    
+    <div style="font-size: 20px; margin:15px 0 0 15px; font-weight: 700;">Welcome <span id="loggedUserFName"></span></div>
+</div>
+       
+        <ul id="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Vision</a></li>
+            <button id="logout">Log Out  <i class="fas fa-sign-out-alt"></i> </button>
+            <!-- <li><a href="#"><img id="profile" width="38px" src="svg/profile.svg"></a></li> -->
+        </ul>
+        <button id="logout2">Log Out  <i class="fas fa-sign-out-alt"></i> </button>
+    </nav>
+
+    
+    <!-- Main Content -->
+    <main>
+        <div class="overlay" >
+            <img id="main-img"  src="assert/ChatGPT Image Apr 1, 2025, 11_16_39 AM.png">
+        </div>
+       
+    
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h2>Clean India Mission</h2>
+                    <p>Join the digital revolution in waste management and help create a cleaner, greener India</p>
+                    <a href="#" class="cta-button">Join Now</a>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h2>Smart Waste Collection</h2>
+                    <p>Schedule pickups, track progress, and earn rewards for responsible waste disposal</p>
+                    <a href="#" class="cta-button">Learn More</a>
+                </div>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="slide-content">
+                        <h2>Clean India Mission</h2>
+                        <p>Join the digital revolution in waste management and help create a cleaner, greener India</p>
+                        <a href="#" class="cta-button">Join Now</a>
+                    </div>
+                </div>
+
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h2>Smart Waste Collection</h2>
+                    <p>Schedule pickups, track progress, and earn rewards for responsible waste disposal</p>
+                    <a href="#" class="cta-button">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h2>Green Cities Initiative</h2>
+                    <p>Together we can achieve sustainable cities and zero-waste communities</p>
+                    <a href="#" class="cta-button">Get Started</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br><br><br>
+        <!-- Live Location  -->
+          <div >
+            <center><h1>Hello <span id="loggedUserFName2"></span>, You can report us here</h1></center>
+          </div>
+          <br>
+          <center>
+
+            <section id="videoSec">
+                <div id="appBody">
+                     <div id="tabContainer" class="tab-container">
+                         <button class="tab active" data-tab="upload">Upload Files</button>
+                         <button class="tab" data-tab="record">Live Recording</button>
+                     </div>
+                 
+                     <!-- Upload Window -->
+                     <div class="window active" id="uploadWindow">
+                         <h3>Upload Image or Video</h3>
+                         <input type="file" id="fileInput" accept="image/*,video/*">
+                         <div id="uploadPreview"></div>
+                         
+                         <h3>Preview</h3>
+                         <div id="filePreview"></div>
+                     </div>
+                 
+                     <!-- Recording Window -->
+                     <div class="window" id="recordWindow">
+                         <h3>Live Recording</h3>
+                         <video id="preview" autoplay></video>
+                         <button class="record-btn" id="startRecord">Start Recording</button>
+                         <button class="stop-btn" id="stopRecord" disabled>Stop Recording</button>
+                         <a id="downloadLink" class="download-btn" download="recorded-video.webm">Download Video</a>
+                         
+                         <h3 id="recordvideptext">Recorded Video Preview</h3>
+                         <video id="recordedPreview" controls></video>
+                     </div>
+                     
+                 </div>
+                   
+                </section>
+          <div class="mobile">
+            <img src="svg/mobile.svg" width="45" alt="phone">
+            <input type="number" id="mob" required placeholder="Enter Mobile Number">
+        </div>
+         </center>
+        <br><br>
+    
+        <div class="location" id="location">
+            <center>
+               Click On
+                <button style="border: 5px solid rgb(255, 145, 0) ; border-radius: 50%; height: 60px; width: 60px;"><span>
+                    <img src="svg/locationIcon.svg" id="Locationicon" width="50" alt="Location Icon">
+                </span>
+            </button>
+            For Current Location
+            </center>
+            <br>
+            <center>
+            <div id="CurrLoc" style="width: 300px;">
+                <i class="fa-solid fa-location-dot"></i>
+                <input class="coordinates" id="latitude" type="text" placeholder=" Latitude" readonly>
+                <i class="fa-solid fa-location-dot"></i>
+                <input class="coordinates" id="longitude" type="text" placeholder=" Longitude" readonly>
+            </div>
+            <br>
+            <button onclick="getAreaName()" style="background-color: rgba(83, 232, 83, 0.773); height: 50px; width: 180px; border-radius: 10px; font-size: 18px; font-weight: 600;">Get Your Address</button>
+            <div id="result"></div>
+            <div class="btn-submitAthority">
+                <button id="btn-send">
+                      Sumbit
+                </button>
+             </div>
+            </center>
+            <br>
+
+     <hr>
+
+     <section class="container" style="font-size: 15px ;">
+        <div class="heading">
+            <h1 style="color: rgb(54, 71, 4);">What We Do</h1>
+            <p>Join our mission for a cleaner, greener India</p>
+        </div>
+
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://1.bp.blogspot.com/-8uD-lNbNXDY/XgRcPAT4YHI/AAAAAAAA1Yo/qa6MTYLGvTc3ZGj_5TgZdGUjYoMh2VmdACLcBGAsYHQ/s1600/banner-small-garbage-day_402x-1.jpg" alt="Video Reporting">
+                <div class="card-content">
+                    <h3>Video Reporting</h3>
+                    <p>Document garbage issues with geotagged video evidence for immediate municipal attention.</p>
+                    <a href="#" class="btn">Report Issue</a>
+                </div>
+            </div>
+
+            
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/912d1f189970791.Y3JvcCwyNDYzLDE5MjYsNDUxLDM1Mw.jpg" alt="Eco Rewards">
+                <div class="card-content">
+                    <h3>Eco-Rewards</h3>
+                    <p>Earn redeemable points for verified reports and top contributor rankings.</p>
+                    <a href="#" class="btn">Earn Rewards</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://le-uploaded-image-bucket.s3.amazonaws.com/20171218/rsCZgHHNgxdCPWaDSmI15135939725205.jpg" alt="Green Solutions">
+                <div class="card-content">
+                    <h3>Green Solutions</h3>
+                    <p>Connect with recycling partners and sustainable waste management initiatives.</p>
+                    <a href="#" class="btn">Go Green</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://d3i71xaburhd42.cloudfront.net/b63967de1ef5780c9e2b4814d5554ad0f91e0e79/2-Figure1-1.png" alt="Impact Analytics">
+                <div class="card-content">
+                    <h3>Impact Analytics</h3>
+                    <p>Real-time tracking of cleaned areas and community impact metrics.</p>
+                    <a href="#" class="btn">View Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+
+    <div class="faq-container">
+        <div class="faq-header">
+            <h1>🌱 Trash Tracker FAQ</h1>
+            <p>Find answers to common questions about our garbage reporting system</p>
+        </div>
+
+        <!-- General Questions -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What is Trash Tracker?</h3>
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                <p>Trash Tracker is a citizen-powered platform for reporting environmental issues, specifically designed for garbage management. Users can report improperly disposed waste through video evidence and geolocation tagging.</p>
+            </div>
+        </div>
+
+        <!-- Reporting Process -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How do I report garbage accumulation?</h3>
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                <p>To report garbage:</p>
+                <ol>
+                    <li>Capture video/photos of the site</li>
+                    <li>Allow location access</li>
+                    <li>Fill details about waste type</li>
+                    <li>Submit for municipal action</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Rewards System -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How does the reward system work?</h3>
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                <p>Users earn EcoPoints for:</p>
+                <ul>
+                    <li>✅ Verified reports</li>
+                    <li>🗑 Regular participation</li>
+                    <li>🌍 Community impact</li>
+                </ul>
+                <p>Points can be redeemed for eco-friendly products or local discounts.</p>
+            </div>
+        </div>
+
+        <!-- Data Privacy -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Is my personal information secure?</h3>
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                <p>We prioritize user privacy:</p>
+                <ul>
+                    <li>📍 Location data is anonymized</li>
+                    <li>📹 Media files are encrypted</li>
+                    <li>🔒 No personal data shared with third parties</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Government Response -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What happens after I submit a report?</h3>
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                <p>Our process:</p>
+                <ol>
+                    <li>Report verification within 24 hours</li>
+                    <li>Priority classification</li>
+                    <li>Forwarded to local authorities</li>
+                    <li>Cleanup status tracking</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="eco-badge">
+            Still have questions? Contact us at <a href="#">support@TrashTracker.in</a>
+        </div>
+    </div>
+    <hr>
+        </div>
+</main> 
+    <script src="login-register.js"></script>
+    <script src="mainScript.js"></script>
+    <script src="frebaseauth.js"></script>
+    <script src="bot.js"></script>
+   <script src="faq.js"></script>
+
+    <script>  async function getAreaName() {
+        const latitude = document.getElementById('latitude').value;
+        const longitude = document.getElementById('longitude').value;
+        const resultDiv = document.getElementById('result');
+
+        resultDiv.style.display = 'block';
+
+        if (!latitude || !longitude) {
+            resultDiv.innerHTML = "Please enter both latitude and longitude";
+            return;
+        }
+
+        try {
+            resultDiv.innerHTML = "Fetching location...";
+            
+            const response = await fetch(
+
+               `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
+
+            );
+            
+            const data = await response.json();
+            
+            if (data.error) {
+                resultDiv.innerHTML = "Location not found";
+                return;
+            }
+
+            const address = data.address;
+            const areaName = [
+                address.neighbourhood,
+                address.suburb,
+                address.city_district,
+                address.city,
+                address.state,
+                address.country
+            ].filter(Boolean).join(", ");
+
+            resultDiv.innerHTML = `
+                <strong>Location Details:</strong><br>
+                ${areaName}<br><br>
+                <strong>Full Address:</strong><br>
+                ${data.display_name}
+            `;
+
+        } catch (error) {
+            console.error("Error:", error);
+            resultDiv.innerHTML = "Error fetching location data";
+        }
+    }</script>
+
+
+    
+    
+</body>
+</html>

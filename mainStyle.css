@@ -1,0 +1,522 @@
+/* ! Main Body */
+body{
+    background: radial-gradient(#d7dee1, #3f87a6);
+}
+main{
+    height: 1800px;
+}
+#main-img{
+
+    height: 430px;
+    width: 100vw;
+}
+
+#marquee {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blueviolet;
+    animation: marquee 1s linear infinite;
+}
+
+/* ! Current Location */
+#location{
+    width: 100vw;
+    height: 300px;
+     /* border: 2px solid black;  */
+    color: rgb(1, 0, 0);
+    font-size: 25px;
+    font-weight: 600;
+  
+}
+
+#result {
+
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+    background-color: #65bdd3;
+    display: none;
+    width: 700px;
+    height: 290px;
+}
+
+#Locationicon{
+    height: 30px;
+}
+
+#CurrLoc {
+    display: flex;
+    justify-content: center;
+     margin-top: 10px;
+}
+.coordinates{
+    /* width: 40vw;
+    height: 30px; */
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    margin-right: 14px;
+    border-bottom: 2px solid #162938;
+}
+
+#profilephoto{
+    height: 100px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+/* ! Video Capture */
+.videoContainer {
+    height: 210px;
+   
+    background-color: transparent;
+}
+
+.video-cnt {
+    display: flex;
+    justify-content: space-around;
+    color: red;
+    
+}
+
+.videoPreview {
+    height: 180px;
+    max-width: 45vw;
+    border: 2px solid black;
+}
+
+.btn-recording {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-recording button {
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: red;
+    border-radius: 20px;
+}
+
+.mobile{
+    width: 550px;
+}
+
+#mob {
+    background-color: beige;
+    height: 30px;
+    width: 80%;
+    margin-top: 25px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #162938;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.btn-submitAthority{
+    display: flex;
+    justify-content: center;
+}
+#btn-send{
+    height: 50px;
+    width: 25vw;
+    padding: 10px 15px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: rgb(4, 0, 0);
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn-submitAthority {
+    position: relative; /* Ensure tooltip positions relative to this container */
+    display: flex;
+    justify-content: center;
+}
+
+#btn-send:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+    position: relative; /* Required for the tooltip to position correctly */
+}
+
+#btn-send:disabled:hover::after {
+    content: "You have reached your submission limit for today.";
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 150%; /* Position the tooltip above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    width: max-content;
+    max-width: 200px;
+    /* white-space: nowrap; */
+    z-index: 1;
+    text-align: center;
+    pointer-events: none; /* Ensure only the button itself is clickable */
+}
+
+#videoSec{
+     position: relative;
+    
+}
+
+#appBody {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Tab container */
+#tabContainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Tab buttons */
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #ddd;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+    font-size: 15px
+}
+.tab.active {
+    background: white;
+    font-weight: bold;
+   
+}
+
+/* Window containers */
+.window {
+    display: none;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    font-size: 20px;
+}
+.window.active {
+    display: block;
+}
+
+/* Upload Window specific styles */
+#uploadWindow h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#fileInput {
+    margin: 15px 0;
+    width: 100%;
+}
+
+#uploadPreview {
+    margin: 15px 0;
+}
+
+#filePreview {
+    min-height: 200px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+#filePreview img, #filePreview video {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+}
+
+/* Recording Window specific styles */
+#recordWindow h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#preview {
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+#startRecord {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#stopRecord {
+    background: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#stopRecord:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#downloadLink {
+    display: none;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#recordedPreview {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Button styles */
+.record-btn {
+    background: #28a745;
+    color: white;
+}
+.stop-btn {
+    background: #dc3545;
+    color: white;
+}
+.download-btn {
+    background: #007bff;
+    color: white;
+}
+
+/* Media elements */
+#preview, #recordedPreview, #filePreview img, #filePreview video {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.sidebar_menu{
+    position: absolute;
+    top: 50px;
+    left: -350px;
+    width: 350px;
+    border: none;
+    height: 100vh;
+    background-color: rgba(249, 249, 238, 0.959);
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.574);
+    z-index: 2;
+}
+
+#check:checked ~ .sidebar_menu{
+
+    left: 0px;
+
+}
+
+      .container {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .heading h1 {
+            color: #2ecc71;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            color: #000000;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            
+        }
+
+        .card p {
+            color: #135d04;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #27ae60;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9em;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #219a52;
+        }
+
+       
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            #mob{
+                width: 50%;
+            }
+            #result{
+                width: 300px;
+                height: 280px;
+                font-size: 15px;
+            }
+
+            .mobile{
+                width: 500px;
+            }
+            #mob{
+                width: 250px;
+            }
+        
+        }
+
+        @media (max-width: 500px) {
+            .mobile{
+                width: 300px;
+            }
+            #mob{
+                width: 180px;
+            }
+
+            .window{
+                height: 350px;
+                width: 350px;
+            }
+
+            main{
+                font-size: 12px;
+            }
+
+            #result{
+                width: 200px;
+                height: 180px;
+                font-size: 10px;
+            }
+            #filePreview img, #filePreview video {
+                height: 100px;
+                width: 150px;
+            }
+            #preview{
+                height: 200px;
+                width: 150px;
+            }
+            #startRecord{
+                font-size: 10px;
+            }
+            #stopRecord{
+                font-size: 10px;
+                
+            }
+            #downloadLink {
+                display: none;
+                background: #007bff;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                margin: 10px 0;
+            }
+
+            #recordedPreview {
+                 height: 200px;
+                width: 140px;
+                display: none;
+                margin-top: -370px;
+                margin-left: 180px;
+            }
+            #recordvideptext{
+               display: none;
+            }
+            #recordWindow{
+                height: 400px;
+            }
+        }
+    
+#cut{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+
